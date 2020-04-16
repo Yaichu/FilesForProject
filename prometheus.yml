@@ -26,7 +26,7 @@ scrape_configs:
   - job_name: 'node-exporters'
     consul_sd_configs:
     - server: '172.17.0.1:8500'
-      services: ['promcol', 'opsschool']
+      services: ['promcol', 'opsschool', 'jenkins']
     # All hosts detected will use port 9100 for node-exporter
     relabel_configs:
       - source_labels: ['__address__']
