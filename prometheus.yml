@@ -33,7 +33,7 @@ scrape_configs:
         separator:     ':'
         regex:         '(.*):(.*)'
         target_label:  '__address__'
-        replacement:   '\$1:9100'
+        replacement:   '$1:9100'
       - source_labels: [__meta_consul_node]
         target_label: instance 
      
