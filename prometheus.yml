@@ -28,10 +28,10 @@ scrape_configs:
     static_configs:
     - targets: ['localhost:9090']
     
-    - job_name: 'consul'
-      consul_sd_configs:
-      - server:   '10.0.10.23:8500'
-        services: ['promcol']
+  - job_name: 'consul'
+    consul_sd_configs:
+    - server:   '10.0.10.23:8500'
+      services: ['promcol', 'opsschool']
 
 #  - job_name: 'node_exporter'
 #    scrape_interval: 15s
